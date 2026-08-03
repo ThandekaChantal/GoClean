@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoClean Dashboard</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <img src="images/logo.png" class="logo" alt="GoClean">
+
+        <nav>
+
+            <a href="#" class="active">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-circle-plus"></i>
+                New Orders
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-clipboard"></i>
+                My Orders
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-truck"></i>
+                Track Order
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-location-dot"></i>
+                Addresses
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-credit-card"></i>
+                Payment Methods
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-circle-user"></i>
+                Profile
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-headset"></i>
+                Support
+            </a>
+
+        </nav>
+
+        <button class="logout-btn">
+            Logout
+        </button>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div class="search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                        type="text"
+                        placeholder="Search orders, services...">
+
+            </div>
+
+            <div class="top-icons">
+
+                <i class="fa-regular fa-bell"></i>
+
+                <i class="fa-solid fa-circle-user"></i>
+
+            </div>
+
+        </header>
+
+
+        <!-- WELCOME -->
+
+        <section class="welcome">
+
+            <h1>
+                Welcome back, Chris!
+                👋
+            </h1>
+
+            <p>
+                Here's what's happening in your laundry.
+            </p>
+
+        </section>
+
+
+        <!-- ================= DASHBOARD ROW ================= -->
+
+        <section class="dashboard-row">
+
+
+            <!-- CURRENT ORDER -->
+
+            <div class="current-order">
+
+                <div class="order-text">
+
+                    <h2>Current Order</h2>
+
+                    <h3>#QRD1348</h3>
+
+                    <p>Delivery</p>
+
+                    <p>18 May, 13:00 - 16:00</p>
+
+                    <span class="status">
+                        Picked Up
+                    </span>
+
+                </div>
+
+                <img
+                        src="images/Laundry.png"
+                        alt="Laundry">
+
+            </div>
+
+
+            <!-- QUICK ACTIONS -->
+
+            <div class="quick-actions">
+
+                <h2>Quick Actions</h2>
+
+                <div class="action">
+
+                    <i class="fa-solid fa-circle-plus"></i>
+
+                    <div>
+
+                        <h3>New Order</h3>
+
+                        <p>Schedule a new pickup</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="action">
+
+                    <i class="fa-regular fa-clipboard"></i>
+
+                    <div>
+
+                        <h3>My Orders</h3>
+
+                        <p>View past orders</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="action">
+
+                    <i class="fa-solid fa-truck"></i>
+
+                    <div>
+
+                        <h3>Track Order</h3>
+
+                        <p>Track your current order</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= RECENT ORDERS ================= -->
+
+        <section class="recent-orders">
+
+            <h2>
+                Recent Orders
+            </h2>
+
+            <div class="cards">
+
+
+                <!-- CARD 1 -->
+
+                <div class="card">
+
+                    <div class="card-header">
+
+                        <h3>#QRD1348</h3>
+
+                        <span class="progress">
+                            In Progress
+                        </span>
+
+                    </div>
+
+                    <p>Wash & Fold</p>
+
+                    <p>8.4 kg</p>
+
+                    <p>Delivery</p>
+
+                    <p>19 May, 10:00 AM</p>
+
+                    <h4>Total</h4>
+
+                    <h3>R410.34</h3>
+
+                    <button>
+
+                        Track Order
+
+                    </button>
+
+                </div>
+
+
+                <!-- CARD 2 -->
+
+                <div class="card">
+
+                    <div class="card-header">
+
+                        <h3>#QRD1379</h3>
+
+                        <span class="completed">
+
+                            Completed
+
+                        </span>
+
+                    </div>
+
+                    <p>Dry Clean</p>
+
+                    <p>5.0 kg</p>
+
+                    <p>Pickup</p>
+
+                    <p>22 May, 16:00 PM</p>
+
+                    <h4>Total</h4>
+
+                    <h3>R199.71</h3>
+
+                    <button>
+
+                        Track Order
+
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

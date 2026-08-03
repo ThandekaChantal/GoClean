@@ -1,0 +1,517 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#222;
+}
+
+
+/* ===========================
+   MAIN LAYOUT
+=========================== */
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar{
+    width:260px;
+    background:#ffffff;
+    padding:30px 25px;
+    display:flex;
+    flex-direction:column;
+    justify-content:top;
+    border-right:1px solid #ececec;
+}
+
+.logo{
+    width:160px;
+    margin:0 auto 40px;
+    display:block;
+}
+
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+.sidebar nav{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.sidebar nav a{
+    text-decoration:none;
+    color:#555;
+    padding:14px 18px;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    font-size:15px;
+    transition:.3s;
+}
+
+.sidebar nav a i{
+    width:20px;
+    text-align:center;
+}
+
+.sidebar nav a:hover{
+    background:#e9f7f2;
+    color:#248fe7;
+}
+
+.sidebar nav .active{
+    background:#58A6FF;
+    color:white;
+}
+
+
+/* ===========================
+   LOGOUT BUTTON
+=========================== */
+
+.logout-btn{
+    border:none;
+    background:#ce0606;
+    color:white;
+    padding:14px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+.logout-btn:hover{
+    background:#05aefc;
+}
+
+
+/* ===========================
+   MAIN CONTENT
+=========================== */
+
+.main-content{
+    flex:1;
+    padding:35px;
+}
+
+
+/* ===========================
+   TOP BAR
+=========================== */
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+}
+
+
+/* ===========================
+   SEARCH BAR
+=========================== */
+
+.search{
+    width:420px;
+    background:white;
+    border-radius:50px;
+    padding:14px 20px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.search i{
+    color:#888;
+}
+
+.search input{
+    border:none;
+    outline:none;
+    width:100%;
+    font-size:15px;
+    background:transparent;
+}
+
+
+/* ===========================
+   TOP ICONS
+=========================== */
+
+.top-icons{
+    display:flex;
+    gap:20px;
+    font-size:22px;
+    color:#555;
+    cursor:pointer;
+}
+
+.top-icons i:hover{
+    color:#05aefc;
+}
+
+
+/* ===========================
+   WELCOME
+=========================== */
+
+.welcome{
+    margin-bottom:35px;
+}
+
+.welcome h1{
+    font-size:34px;
+    margin-bottom:8px;
+}
+
+.welcome p{
+    color:#777;
+    font-size:15px;
+}
+/* ===========================
+   DASHBOARD ROW
+=========================== */
+
+.dashboard-row{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+    margin-bottom:35px;
+}
+
+
+/* ===========================
+   CURRENT ORDER
+=========================== */
+
+.current-order{
+    background:#58A6FF;
+    border-radius:25px;
+    padding:30px;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:220px;
+    overflow:hidden;
+}
+
+.order-text h2{
+    font-size:27px;
+    margin-bottom:15px;
+}
+
+.order-text h3{
+    font-size:25px;
+    margin-bottom:10px;
+}
+
+.order-text p{
+    margin-bottom:8px;
+    opacity:.95;
+}
+
+.status{
+    display:inline-block;
+    margin-top:18px;
+    background:white;
+    color:#7cd6b8;
+    padding:10px 18px;
+    border-radius:50px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.current-order img{
+    width:400px;
+    object-fit:contain;
+}
+
+
+/* ===========================
+   QUICK ACTIONS
+=========================== */
+
+.quick-actions{
+    background:white;
+    border-radius:25px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+.quick-actions h2{
+    margin-bottom:25px;
+    font-size:22px;
+}
+
+
+/* ===========================
+   ACTION CARD
+=========================== */
+
+.action{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    padding:18px;
+    margin-bottom:18px;
+    border-radius:18px;
+    background:#f8f9fb;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.action:last-child{
+    margin-bottom:0;
+}
+
+.action:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+.action i{
+    width:55px;
+    height:55px;
+    background:#6e7885;
+    color:white;
+    border-radius:16px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+}
+
+.action h3{
+    font-size:16px;
+    margin-bottom:5px;
+}
+
+.action p{
+    color:#777;
+    font-size:14px;
+}
+/* ===========================
+   RECENT ORDERS
+=========================== */
+
+.recent-orders{
+    background:#ffffff;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+.recent-orders h2{
+    margin-bottom:25px;
+    font-size:24px;
+}
+
+
+/* ===========================
+   ORDER CARDS
+=========================== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(20px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#f8f9fb;
+    border-radius:20px;
+    padding:25px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+
+/* ===========================
+   CARD HEADER
+=========================== */
+
+.card-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:18px;
+}
+
+.card-header h3{
+    font-size:20px;
+}
+
+
+/* ===========================
+   STATUS BADGES
+=========================== */
+
+.progress{
+    background:#FFF3CD;
+    color:#856404;
+    padding:8px 14px;
+    border-radius:50px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.completed{
+    background:#D4EDDA;
+    color:#155724;
+    padding:8px 14px;
+    border-radius:50px;
+    font-size:13px;
+    font-weight:600;
+}
+
+
+/* ===========================
+   CARD CONTENT
+=========================== */
+
+.card p{
+    color:#666;
+    margin-bottom:10px;
+    font-size:15px;
+}
+
+.card h4{
+    margin-top:20px;
+    color:#999;
+    font-size:14px;
+    font-weight:500;
+}
+
+.card h3:last-of-type{
+    color:#009966;
+    margin:10px 0 20px;
+    font-size:28px;
+}
+
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.card button{
+    width:100%;
+    border:none;
+    background:#8991a8;
+    color:white;
+    padding:14px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.card button:hover{
+    background:#6da5bb;
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width:1100px){
+
+    .dashboard-row{
+        grid-template-columns:1fr;
+    }
+
+    .current-order{
+        flex-direction:column;
+        text-align:center;
+        gap:20px;
+    }
+
+}
+
+@media (max-width:900px){
+
+    .sidebar{
+        width:90px;
+        padding:25px 15px;
+    }
+
+    .sidebar nav a{
+        justify-content:center;
+    }
+
+    .sidebar nav a span{
+        display:none;
+    }
+
+    .logout-btn{
+        display:none;
+    }
+
+    .logo{
+        width:55px;
+    }
+
+    .main-content{
+        padding:25px;
+    }
+
+    .topbar{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;
+    }
+
+    .search{
+        width:100%;
+    }
+
+}
+
+@media (max-width:650px){
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .welcome h1{
+        font-size:26px;
+    }
+
+    .current-order img{
+        width:170px;
+    }
+
+}
