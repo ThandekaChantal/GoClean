@@ -219,12 +219,12 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    min-height:220px;
+    min-height:219px;
     overflow:hidden;
 }
 
 .order-text h2{
-    font-size:27px;
+    font-size:28px;
     margin-bottom:15px;
 }
 
