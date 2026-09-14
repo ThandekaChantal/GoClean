@@ -1,0 +1,400 @@
+/* ===========================
+   GoClean About Us
+=========================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #16181d;
+    background: #ffffff;
+}
+
+
+/* ===========================
+   HEADER
+=========================== */
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 48px;
+    border-bottom: 1px solid #e3e5e9;
+    background: #ffffff;
+}
+
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #16181d;
+    text-decoration: none;
+}
+
+.logo-accent {
+    color: #7fb3ff;
+}
+
+.logo-badge {
+    background: #16181d;
+    color: #ffffff;
+    font-size: 0.55rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 3px 6px;
+    border-radius: 3px;
+    align-self: flex-start;
+    margin-top: -14px;
+}
+
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+.main-nav {
+    display: flex;
+    gap: 28px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #16181d;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: 0.2s ease;
+}
+
+.main-nav a.active,
+.main-nav a:hover {
+    color: #2f5fff;
+}
+
+
+/* ===========================
+   HEADER ICONS
+=========================== */
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.icon-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: none;
+    background: none;
+    color: #2f5fff;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.icon-btn:first-child {
+    color: #7fb3ff;
+}
+
+.notif-dot {
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #16181d;
+}
+
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 44px 48px 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    align-items: center;
+}
+
+.hero-text {
+    padding: 20px 0;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin: 0 0 18px;
+    color: #16181d;
+}
+
+.hero-text p:first-of-type {
+    color: #2f5fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 16px;
+}
+
+.hero-text p:last-of-type {
+    color: #6b7280;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    max-width: 480px;
+    margin: 0;
+}
+
+.hero-image {
+    height: 360px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #e3e5e9;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ===========================
+   ABOUT CARDS
+=========================== */
+
+.about-card {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 32px 48px;
+
+    background: #ffffff;
+    border: 1px solid #e3e5e9;
+    border-radius: 10px;
+}
+
+.about-card h2 {
+    color: #16181d;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 16px;
+}
+
+.about-card p {
+    color: #6b7280;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* ===========================
+   FEATURES
+=========================== */
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 26px;
+}
+
+.feature {
+    background: #ffffff;
+    border: 1px solid #e3e5e9;
+    border-radius: 10px;
+    padding: 24px;
+
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.feature:hover {
+    box-shadow: 0 6px 18px rgba(20, 20, 30, 0.08);
+    transform: translateY(-2px);
+}
+
+.feature i {
+    width: 44px;
+    height: 44px;
+
+    background: #2f5fff;
+    color: #ffffff;
+
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 19px;
+    margin-bottom: 16px;
+}
+
+.feature h3 {
+    margin: 0 0 8px;
+    color: #16181d;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.feature p {
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
+    margin-top: 60px;
+    padding: 30px 48px;
+
+    background: #ffffff;
+    border-top: 1px solid #e3e5e9;
+
+    text-align: center;
+}
+
+footer p {
+    color: #6b7280;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 1100px) {
+
+    .main-nav {
+        gap: 18px;
+    }
+
+    .main-nav a {
+        font-size: 0.88rem;
+    }
+
+    .hero {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .about-card {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .site-header {
+        padding: 18px 28px;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .header-icons {
+        margin-left: auto;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 35px 28px 0;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-text p:last-of-type {
+        max-width: none;
+    }
+
+    .hero-image {
+        height: 380px;
+    }
+
+    .about-card {
+        margin-left: 28px;
+        margin-right: 28px;
+        padding: 28px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .site-header {
+        padding: 16px 20px;
+    }
+
+    .hero {
+        padding: 28px 20px 0;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p:first-of-type {
+        font-size: 1.25rem;
+    }
+
+    .hero-text p:last-of-type {
+        font-size: 0.95rem;
+    }
+
+    .hero-image {
+        height: 280px;
+    }
+
+    .about-card {
+        margin: 28px 20px;
+        padding: 24px;
+    }
+
+    .about-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .about-card p {
+        font-size: 0.95rem;
+    }
+
+    footer {
+        padding: 25px 20px;
+    }
+}
